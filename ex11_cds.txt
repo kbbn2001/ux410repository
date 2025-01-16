@@ -1,16 +1,16 @@
-@AbapCatalog.sqlViewName: 'ZUX410FLIGTUI001' 
+@AbapCatalog.sqlViewName: 'ZUX410FLIGHTUI02' 
 @AbapCatalog.compiler.compareFilter: true
 @AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'UX410 Flight UI'
 @OData.publish: true
-@OData.entitySet.name: 'FlightSet00'
-@OData.entityType.name: 'Flight00'
+@OData.entitySet.name: 'FlightSet02'
+@OData.entityType.name: 'Flight02'
 
 @UI.headerInfo.typeName: 'Flight'
 @UI.headerInfo.typeNamePlural: 'Flights'
 
 
-define view ZUX410_C_FLIGHTUI00_11 as select from sflight as sf
+define view ZUX410_C_FLIGHTUI02 as select from sflight as sf
     association to scarr as sc on sf.carrid = sc.carrid 
     association to sflights as sfs on sfs.carrid = sf.carrid and 
     sfs.connid = sf.connid and sfs.fldate = sf.fldate
