@@ -1,0 +1,125 @@
+@AbapCatalog.sqlViewName: 'ZUX410FLIGHTUI02' 
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'UX410 Flight UI'
+@OData.publish: true
+@OData.entitySet.name: 'FlightSet02'
+@OData.entityType.name: 'Flight02'
+
+@UI.headerInfo.typeName: 'Flight'
+@UI.headerInfo.typeNamePlural: 'Flights'
+@UI.headerInfo.title.value: 'carrid'
+@UI.headerInfo.description.value: 'carrname'
+
+@Search.searchable: true
+
+
+define view ZUX410_C_FLIGHTUI02 as select from sflight as sf
+    association to scarr as sc on sf.carrid = sc.carrid 
+    association to sflights as sfs on sfs.carrid = sf.carrid and 
+    sfs.connid = sf.connid and sfs.fldate = sf.fldate
+    association [*] to ZUX410_C_BOOKINGUI02 as _Bookings 
+        on $projection.carrid = _Bookings.carrid and $projection.fldate = _Bookings.fldate and
+        $projection.connid = _Bookings.connid  
+ {     
+ 
+ @UI.facet: [
+ {   purpose:#HEADER, type: #FIELDGROUP_REFERENCE, targetQualifier: 'flightinfo', position:10 },
+ {   purpose:#HEADER, type: #FIELDGROUP_REFERENCE, targetQualifier: 'seatinfo', position:20 },
+ {   purpose:#STANDARD, type: #FIELDGROUP_REFERENCE, targetQualifier: 'seatdata', position:10},
+ {   purpose:#STANDARD, type: #FIELDGROUP_REFERENCE, targetQualifier: 'seatdata2', position:20},
+ {   purpose:#STANDARD, id: 'seat1', label:'Seatsinfo 1', type:#COLLECTION, position:30},
+ {   purpose:#STANDARD, id: 'seat2', label:'Seatsinfo 2', type:#COLLECTION, position:40}
+ ]
+ 
+@UI.lineItem.position:10
+    key sf.carrid,
+@UI.lineItem.position:20
+    key sf.connid,
+    
+@UI.identification.position:20    
+@UI.lineItem.position:30
+    key sf.fldate,     
+       
+@UI.identification.position:10
+@Search.defaultSearchElement: true
+@Search.fuzzinessThreshold: 0.7
+@UI.selectionField.position:10
+@UI.lineItem.position:40
+    sc.carrname,         
+    
+@UI.identification.position:30    
+@UI.fieldGroup : [
+  {
+    qualifier:'flightinfo', position:10
+   }
+]
+@UI.selectionField.position:20    
+@UI.lineItem.position:70    
+    sfs.cityfrom,    
+    
+@UI.identification.position:40    
+@UI.fieldGroup : [
+  {
+    qualifier:'flightinfo', position:20
+   }
+]    
+@UI.selectionField.position:30 
+@UI.lineItem.position:80    
+    sfs.cityto,
+
+@UI.identification.position:50    
+@UI.lineItem.position:50
+@UI.lineItem.importance: #HIGH    
+    sf.planetype, 
+@UI.lineItem.importance: #LOW   
+@UI.lineItem.position:60    
+    sf.price,   
+@Semantics.currencyCode: true    
+    sf.currency,
+@Semantics.amount.currencyCode: 'currency'  
+@UI.lineItem.importance: #MEDIUM 
+@UI.lineItem.position:90   
+    sf.price * sf.seatsocc as Total,
+    
+@UI.fieldGroup : [
+    {
+        qualifier:'seatinfo', position:10
+    }
+]    
+    sf.seatsmax,
+@UI.fieldGroup : [
+    {
+        qualifier:'seatinfo', position:20
+    }
+]       
+    sf.seatsocc,
+    
+@UI.fieldGroup : [
+  {
+  qualifier:'flightinfo', position:30
+  }
+]
+    sc.url,     
+    sf.paymentsum,
+@UI.fieldGroup : [
+  {qualifier:'seatdata', position:10}
+]    
+    sf.seatsmax_b,
+@UI.fieldGroup : [
+  {qualifier:'seatdata2', position:10}
+]    
+    sf.seatsocc_b,
+@UI.fieldGroup : [
+  {qualifier:'seatdata', position:20}
+]        
+    sf.seatsmax_f,
+@UI.fieldGroup : [
+  {qualifier:'seatdata2', position:10}
+]    
+    sf.seatsocc_f,
+    _Bookings
+} 
+
+
+
