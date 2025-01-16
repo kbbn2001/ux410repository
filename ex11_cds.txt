@@ -1,0 +1,53 @@
+@AbapCatalog.sqlViewName: 'ZUX410FLIGTUI001' 
+@AbapCatalog.compiler.compareFilter: true
+@AccessControl.authorizationCheck: #CHECK
+@EndUserText.label: 'UX410 Flight UI'
+@OData.publish: true
+@OData.entitySet.name: 'FlightSet00'
+@OData.entityType.name: 'Flight00'
+
+@UI.headerInfo.typeName: 'Flight'
+@UI.headerInfo.typeNamePlural: 'Flights'
+
+
+define view ZUX410_C_FLIGHTUI00_11 as select from sflight as sf
+    association to scarr as sc on sf.carrid = sc.carrid 
+    association to sflights as sfs on sfs.carrid = sf.carrid and 
+    sfs.connid = sf.connid and sfs.fldate = sf.fldate
+ {     
+@UI.lineItem.position: 10
+    key sf.carrid,
+@UI.lineItem.position: 20
+    key sf.connid,
+@UI.lineItem.position: 30    
+    key sf.fldate,     
+@UI.lineItem.position: 40
+    sc.carrname,        
+@UI.lineItem.position: 70    
+    sfs.cityfrom,    
+@UI.lineItem.position: 80    
+    sfs.cityto,
+@UI.lineItem.position: 50
+@UI.lineItem.importance: #HIGH    
+    sf.planetype, 
+@UI.lineItem.position: 60
+@UI.lineItem.importance: #LOW
+    sf.price,   
+@Semantics.currencyCode: true    
+    sf.currency,
+@Semantics.amount.currencyCode: 'currency'
+@UI.lineItem.position: 90
+@UI.lineItem.importance: #MEDIUM
+    sf.price * sf.seatsocc as Total,
+    sf.seatsmax,
+    sf.seatsocc,
+    sc.url,     
+    sf.paymentsum,
+    sf.seatsmax_b,
+    sf.seatsocc_b,
+    sf.seatsmax_f,
+    sf.seatsocc_f
+} 
+
+
+ 
