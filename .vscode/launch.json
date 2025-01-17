@@ -82,84 +82,84 @@
       }
     },
     {
-        "name": "Start fiorielementswithdependency",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/fiorielementswithdependency",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--open",
-            "test/flpSandbox.html#student02saptrainingfiorieleme-tile"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "DEBUG": "--inspect",
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiorielementswithdependency\"}"
-        }
+      "name": "Start fiorielementswithdependency",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/fiorielementswithdependency",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flpSandbox.html#student02saptrainingfiorieleme-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiorielementswithdependency\"}"
+      }
     },
     {
-        "name": "Start fiorielementswithdependency Local",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/fiorielementswithdependency",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--config",
-            "./ui5-local.yaml",
-            "--open",
-            "test/flpSandbox.html#student02saptrainingfiorieleme-tile"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiorielementswithdependency\"}"
-        }
+      "name": "Start fiorielementswithdependency Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/fiorielementswithdependency",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flpSandbox.html#student02saptrainingfiorieleme-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiorielementswithdependency\"}"
+      }
     },
     {
-        "name": "Start fiorielementswithdependency Mock",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/fiorielementswithdependency",
-        "runtimeExecutable": "npx",
-        "windows": {
-            "runtimeExecutable": "npx.cmd"
-        },
-        "runtimeArgs": [
-            "fiori",
-            "run"
-        ],
-        "args": [
-            "--config",
-            "./ui5-mock.yaml",
-            "--open",
-            "test/flpSandbox.html#student02saptrainingfiorieleme-tile"
-        ],
-        "console": "internalConsole",
-        "internalConsoleOptions": "openOnSessionStart",
-        "outputCapture": "std",
-        "env": {
-            "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-            "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiorielementswithdependency\"}"
-        }
+      "name": "Start fiorielementswithdependency Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/fiorielementswithdependency",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flpSandbox.html#student02saptrainingfiorieleme-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/fiorielementswithdependency\"}"
+      }
     }
   ]
 }

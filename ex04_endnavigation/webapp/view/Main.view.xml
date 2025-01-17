@@ -1,0 +1,12 @@
+<mvc:View controllerName="student00.sap.training.endnavigation.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <layout:VerticalLayout id="_IDGenVerticalLayout1">
+            <Label id="idInfo" text="Hello world"/>
+            </layout:VerticalLayout>
+        </content>
+    </Page>
+</mvc:View>
