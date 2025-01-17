@@ -7,7 +7,7 @@ sap.ui.define([
     function (Controller) {
         "use strict";
 
-        return Controller.extend("student00.sap.training.dynamicpage.controller.Overview", {
+        return Controller.extend("student02.sap.training.dynamicpage.controller.Overview", {
             onInit : function() {
                 this._oList = this.byId("idCarrierList");
                 this.getView().addEventDelegate({
