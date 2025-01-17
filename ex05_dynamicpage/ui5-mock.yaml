@@ -2,7 +2,7 @@
 
 specVersion: "2.5"
 metadata:
-  name: student00.sap.training.dynamicpage
+  name: student02.sap.training.dynamicpage
 type: application
 server:
   customMiddleware:

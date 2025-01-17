@@ -1,4 +1,4 @@
-<mvc:View controllerName="student00.sap.training.dynamicpage.controller.Carrier"
+<mvc:View controllerName="student02.sap.training.dynamicpage.controller.Carrier"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m"
     xmlns:f="sap.f"

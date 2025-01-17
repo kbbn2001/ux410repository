@@ -7,7 +7,7 @@ sap.ui.define([
     function (Controller) {
         "use strict";
 
-        return Controller.extend("student00.sap.training.dynamicpage.controller.NotFound", {
+        return Controller.extend("student02.sap.training.dynamicpage.controller.NotFound", {
             getRouter: function () {
 			    return sap.ui.core.UIComponent.getRouterFor(this);
 		    },

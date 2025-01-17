@@ -2,7 +2,7 @@
 
 specVersion: "2.5"
 metadata:
-  name: student00.sap.training.dynamicpage
+  name: student02.sap.training.dynamicpage
 type: application
 framework:
   name: SAPUI5
@@ -47,5 +47,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: student00.sap.training.dynamicpage
+        component: student02.sap.training.dynamicpage
         ui5Theme: sap_fiori_3
