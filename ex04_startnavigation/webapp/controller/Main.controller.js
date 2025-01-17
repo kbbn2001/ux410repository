@@ -14,7 +14,7 @@ sap.ui.define([
 
                 this._hash = (this._oCrossAppNavigation&&this._oCrossAppNavigation.hrefForExternal({
                     target : {
-                        semanticObject : "UX410NavEnd00",
+                        semanticObject : "UX410NavEnd02",
                         action: "display"
                     },
                     params : {

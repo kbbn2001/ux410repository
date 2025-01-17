@@ -16,8 +16,11 @@ builder:
         target:
           destination: S4D_100
           url: http://s4d.virtual:443
+          client: '100'
         app:
-          name: ZUX410NAVSTAR00
-          description: UX410 navigation starter 00
-          package: ZTRAIN_00
-          transport: S4DK900232
+          name: ZUX410NAVSTAR02
+          description: UX410 navigation starter 02
+          package: ZTRAIN_02
+          transport: S4DK900292
+        exclude:
+          - /test/

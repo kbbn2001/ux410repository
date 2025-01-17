@@ -2,7 +2,7 @@
 
 specVersion: "2.5"
 metadata:
-  name: student02.sap.training.endnavigation
+  name: student00.sap.training.dynamicpage
 type: application
 builder:
   resources:
@@ -16,11 +16,8 @@ builder:
         target:
           destination: S4D_100
           url: http://s4d.virtual:443
-          client: '100'
         app:
-          name: ZUX410NAVEND02
-          description: UX410 Navigation End 02
-          package: ZTRAIN_02
-          transport: S4DK900292
-        exclude:
-          - /test/
+          name: ZUX410_APP00
+          description: UX410 Flight App 00
+          package: ZTRAIN_00
+          transport: S4DK900232
