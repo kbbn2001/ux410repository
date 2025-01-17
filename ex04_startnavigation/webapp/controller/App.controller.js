@@ -5,7 +5,7 @@ sap.ui.define(
     function(BaseController) {
       "use strict";
   
-      return BaseController.extend("student00.sap.training.startnavigation.controller.App", {
+      return BaseController.extend("student02.sap.training.startnavigation.controller.App", {
         onInit() {
         }
       });

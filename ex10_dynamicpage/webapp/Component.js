@@ -5,14 +5,14 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "student00/sap/training/dynamicpage/model/models",
-        "student00/sap/training/dynamicpage/controller/ListSelector"
+        "student02/sap/training/dynamicpage/model/models",
+        "student02/sap/training/dynamicpage/controller/ListSelector"
 
     ],
     function (UIComponent, Device, models, ListSelector) {
         "use strict";
 
-        return UIComponent.extend("student00.sap.training.dynamicpage.Component", {
+        return UIComponent.extend("student02.sap.training.dynamicpage.Component", {
             metadata: {
                 manifest: "json"
             },

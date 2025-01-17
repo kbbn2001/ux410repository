@@ -16,7 +16,7 @@
 	},
 	"layer": "CUSTOMER_BASE",
 	"texts": {},
-	"namespace": "apps/student00.sap.training.dynamicpage/changes/",
+	"namespace": "apps/student02.sap.training.dynamicpage/changes/",
 	"projectId": "customer.ZUX410APP00Extension",
 	"creation": "2023-02-24T08:42:24.302Z",
 	"originalLanguage": "FR",

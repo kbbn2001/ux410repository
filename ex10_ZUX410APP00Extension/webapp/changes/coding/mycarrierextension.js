@@ -1,5 +1,5 @@
 /***
-@controller Name:student00.sap.training.dynamicpage.controller.Carrier,
+@controller Name:student02.sap.training.dynamicpage.controller.Carrier,
 *@viewId:application-adaptationproject-display-component---carrier
 */
 /*!

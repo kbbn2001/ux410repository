@@ -1,7 +1,7 @@
 {
   "_version": "1.49.0",
   "sap.app": {
-    "id": "student00.sap.training.startnavigation",
+    "id": "student02.sap.training.startnavigation",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -55,7 +55,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "student00.sap.training.startnavigation.i18n.i18n"
+          "bundleName": "student02.sap.training.startnavigation.i18n.i18n"
         }
       }
     },
@@ -71,7 +71,7 @@
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
-        "viewPath": "student00.sap.training.startnavigation.view",
+        "viewPath": "student02.sap.training.startnavigation.view",
         "controlAggregation": "pages",
         "controlId": "app",
         "clearControlAggregation": false
@@ -96,7 +96,7 @@
       }
     },
     "rootView": {
-      "viewName": "student00.sap.training.startnavigation.view.App",
+      "viewName": "student02.sap.training.startnavigation.view.App",
       "type": "XML",
       "async": true,
       "id": "App"

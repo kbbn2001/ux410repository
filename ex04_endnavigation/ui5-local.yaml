@@ -2,7 +2,7 @@
 
 specVersion: "2.5"
 metadata:
-  name: student00.sap.training.endnavigation
+  name: student02.sap.training.endnavigation
 type: application
 framework:
   name: SAPUI5
@@ -32,5 +32,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: student00.sap.training.endnavigation
+        component: student02.sap.training.endnavigation
         ui5Theme: sap_horizon

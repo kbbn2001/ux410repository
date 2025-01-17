@@ -1,4 +1,4 @@
-<mvc:View controllerName="student00.sap.training.dynamicpage.controller.NotFound"
+<mvc:View controllerName="student02.sap.training.dynamicpage.controller.NotFound"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
      <MessagePage

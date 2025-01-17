@@ -10,7 +10,7 @@
 |**Service URL**<br>http://s4d.virtual:443/sap/opu/odata/sap/UX_TRAVEL_SRV
 |**Module Name**<br>dynamicpage|
 |**Application Title**<br>App Title|
-|**Namespace**<br>student00.sap.training|
+|**Namespace**<br>student02.sap.training|
 |**UI5 Theme**<br>sap_fiori_3|
 |**UI5 Version**<br>1.96.16|
 |**Enable Code Assist Libraries**<br>False|

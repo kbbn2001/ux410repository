@@ -10,7 +10,7 @@
 |**Service URL**<br>http://s4d.virtual:443/sap/opu/odata/sap/ZUX410_C_FLIGHTUI00_11_CDS
 |**Module Name**<br>fiorielements|
 |**Application Title**<br>Flight Exercise|
-|**Namespace**<br>student00.sap.training|
+|**Namespace**<br>student02.sap.training|
 |**UI5 Theme**<br>sap_fiori_3|
 |**UI5 Version**<br>1.96.20|
 |**Enable Code Assist Libraries**<br>False|

@@ -40,7 +40,7 @@ sap.ui.define([
 								"tileType": "sap.ushell.ui.tile.StaticTile",
 								"properties": {
 									"title": "App Title",
-									"targetURL": "#student00saptrainingstartnavigation-display"
+									"targetURL": "#student02saptrainingstartnavigation-display"
 								}
 							}]
 						}]
@@ -51,8 +51,8 @@ sap.ui.define([
 				"adapter": {
 					"config": {
 						"inbounds": {
-							"student00saptrainingstartnavigation-display": {
-								"semanticObject": "student00saptrainingstartnavigation",
+							"student02saptrainingstartnavigation-display": {
+								"semanticObject": "student02saptrainingstartnavigation",
 								"action": "display",
 								"description": "A Fiori application.",
 								"title": "App Title",
@@ -61,8 +61,8 @@ sap.ui.define([
 								},
 								"resolutionResult": {
 									"applicationType": "SAPUI5",
-									"additionalInformation": "SAPUI5.Component=student00.sap.training.startnavigation",
-									"url": sap.ui.require.toUrl("student00/sap/training/startnavigation")
+									"additionalInformation": "SAPUI5.Component=student02.sap.training.startnavigation",
+									"url": sap.ui.require.toUrl("student02/sap/training/startnavigation")
 								}
 							}
 						}

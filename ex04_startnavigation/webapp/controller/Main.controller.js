@@ -7,7 +7,7 @@ sap.ui.define([
     function (Controller) {
         "use strict";
 
-        return Controller.extend("student00.sap.training.startnavigation.controller.Main", {
+        return Controller.extend("student02.sap.training.startnavigation.controller.Main", {
             onInit: function () {
                 this._fnGetService = sap.ushell && sap.ushell.Container && sap.ushell.Container.getService;
                 this._oCrossAppNavigation = this._fnGetService && this._fnGetService("CrossApplicationNavigation");

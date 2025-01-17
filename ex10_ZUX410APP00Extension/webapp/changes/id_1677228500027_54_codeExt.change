@@ -9,11 +9,11 @@
 		"codeRef": "coding/mycarrierextension.js"
 	},
 	"selector": {
-		"controllerName": "student00.sap.training.dynamicpage.controller.Carrier"
+		"controllerName": "student02.sap.training.dynamicpage.controller.Carrier"
 	},
 	"layer": "CUSTOMER_BASE",
 	"texts": {},
-	"namespace": "apps/student00.sap.training.dynamicpage/changes/",
+	"namespace": "apps/student02.sap.training.dynamicpage/changes/",
 	"projectId": "customer.ZUX410APP00Extension",
 	"creation": "2023-02-24T08:48:20.031Z",
 	"originalLanguage": "FR",

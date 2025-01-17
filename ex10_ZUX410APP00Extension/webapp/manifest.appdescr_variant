@@ -2,9 +2,9 @@
   "fileName": "manifest",
   "layer": "CUSTOMER_BASE",
   "fileType": "appdescr_variant",
-  "reference": "student00.sap.training.dynamicpage",
+  "reference": "student02.sap.training.dynamicpage",
   "id": "customer.ZUX410APP00Extension",
-  "namespace": "apps/student00.sap.training.dynamicpage/appVariants/customer.ZUX410APP00Extension/",
+  "namespace": "apps/student02.sap.training.dynamicpage/appVariants/customer.ZUX410APP00Extension/",
   "content": [
     {
       "changeType": "appdescr_app_setTitle",

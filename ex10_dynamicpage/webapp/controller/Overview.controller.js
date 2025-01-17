@@ -13,7 +13,7 @@ sap.ui.define([
     function (Controller, Filter, FilterOperator, Sorter, Fragment, syncStyleClass) {
         "use strict";
 
-        return Controller.extend("student00.sap.training.dynamicpage.controller.Overview", {
+        return Controller.extend("student02.sap.training.dynamicpage.controller.Overview", {
 			onInit : function() {
                 this._oList = this.byId("idCarrierList");
                 this.getView().addEventDelegate({
@@ -176,7 +176,7 @@ sap.ui.define([
                 }  
 			    if (!this._oViewSettingsDialog) {           
                     Fragment.load({
-                        name:  "student00.sap.training.dynamicpage.view.ViewSettingsDialog", 
+                        name:  "student02.sap.training.dynamicpage.view.ViewSettingsDialog", 
                         controller: this
                     }).then(function(oFragment) {
                          

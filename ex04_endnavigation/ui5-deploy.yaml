@@ -2,7 +2,7 @@
 
 specVersion: "2.5"
 metadata:
-  name: student00.sap.training.endnavigation
+  name: student02.sap.training.endnavigation
 type: application
 builder:
   resources:

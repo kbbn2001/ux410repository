@@ -7,7 +7,7 @@ sap.ui.define([
     function (Controller) {
         "use strict";
 
-        return Controller.extend("student00.sap.training.endnavigation.controller.Main", {
+        return Controller.extend("student02.sap.training.endnavigation.controller.Main", {
             onInit: function () {
                 var oComponentData = this.getOwnerComponent().getComponentData();
                 if(oComponentData && oComponentData.startupParameters && oComponentData.startupParameters.helloText) {

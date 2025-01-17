@@ -7,7 +7,7 @@ sap.ui.define(
     function(BaseController, JSONModel) {
       "use strict";
   
-      return BaseController.extend("student00.sap.training.dynamicpage.controller.App", {
+      return BaseController.extend("student02.sap.training.dynamicpage.controller.App", {
         onInit() {
           this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());
           var oViewModel = new JSONModel({

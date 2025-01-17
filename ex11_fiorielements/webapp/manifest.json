@@ -1,7 +1,7 @@
 {
   "_version": "1.37.0",
   "sap.app": {
-    "id": "student00.sap.training.fiorielements",
+    "id": "student02.sap.training.fiorielements",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -82,7 +82,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "student00.sap.training.fiorielements.i18n.i18n"
+          "bundleName": "student02.sap.training.fiorielements.i18n.i18n"
         }
       },
       "": {

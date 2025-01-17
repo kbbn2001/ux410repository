@@ -6,7 +6,7 @@ sap.ui.define([
 
 	"use strict";
 	
-    return Object.extend("student00.sap.training.dynamicpage.controller.ListSelector", {
+    return Object.extend("student02.sap.training.dynamicpage.controller.ListSelector", {
 	
         constructor : function () {
 			this._oWhenListHasBeenSet = new Promise(function (fnResolveListHasBeenSet) {

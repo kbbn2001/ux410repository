@@ -2,7 +2,7 @@
 
 specVersion: "2.5"
 metadata:
-  name: student00.sap.training.startnavigation
+  name: student02.sap.training.startnavigation
 type: application
 server:
   customMiddleware:
@@ -24,5 +24,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: student00.sap.training.startnavigation
+        component: student02.sap.training.startnavigation
         ui5Theme: sap_horizon

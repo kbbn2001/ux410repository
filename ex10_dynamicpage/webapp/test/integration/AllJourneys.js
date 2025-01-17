@@ -7,7 +7,7 @@ sap.ui.define([
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "student00.sap.training.dynamicpage.view.",
+		viewNamespace: "student02.sap.training.dynamicpage.view.",
 		autoWait: true
 	});
 });

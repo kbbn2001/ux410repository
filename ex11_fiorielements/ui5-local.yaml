@@ -2,7 +2,7 @@
 
 specVersion: "2.6"
 metadata:
-  name: student00.sap.training.fiorielements
+  name: student02.sap.training.fiorielements
 type: application
 framework:
   name: SAPUI5
@@ -46,5 +46,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: student00.sap.training.fiorielements
+        component: student02.sap.training.fiorielements
         ui5Theme: sap_fiori_3

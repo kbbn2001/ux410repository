@@ -10,7 +10,7 @@
 |**Service URL**<br>N/A
 |**Module Name**<br>startnavigation|
 |**Application Title**<br>App Title|
-|**Namespace**<br>student00.sap.training|
+|**Namespace**<br>student02.sap.training|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.110.1|
 |**Enable Code Assist Libraries**<br>False|

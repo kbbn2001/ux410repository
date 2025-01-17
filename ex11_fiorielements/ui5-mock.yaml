@@ -2,7 +2,7 @@
 
 specVersion: "2.6"
 metadata:
-  name: student00.sap.training.fiorielements
+  name: student02.sap.training.fiorielements
 type: application
 server:
   customMiddleware:
